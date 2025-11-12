@@ -1,0 +1,16 @@
+name: Notify Telegram on Pull Request
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Telegram message
+        run: |
+          curl -s -X POST "https://api.telegram.org/bot8576051167:AAE6L3OkwkL5P8jPKzBDHDZbMt4Wc49SpVw/sendMessage" \
+            -d chat_id="-1003349189005" \
+            -d text="$MESSAGE" \
+            -d parse_mode="Markdown"
