@@ -1,0 +1,4 @@
+timestamp,endpoint,status_code,response_time,error
+2025-11-30 13:59:18,https://google.com,200,1.009,
+2025-11-30 13:59:19,https://github.com,200,0.797,
+2025-11-30 13:59:19,https://api.github.com,200,0.44,

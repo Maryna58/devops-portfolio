@@ -1,0 +1,23 @@
+[
+    {
+        "endpoint": "https://google.com",
+        "status_code": 200,
+        "response_time": 0.96,
+        "timestamp": "2025-11-30 13:57:42",
+        "error": null
+    },
+    {
+        "endpoint": "https://github.com",
+        "status_code": 200,
+        "response_time": 0.592,
+        "timestamp": "2025-11-30 13:57:42",
+        "error": null
+    },
+    {
+        "endpoint": "https://api.github.com",
+        "status_code": 200,
+        "response_time": 0.299,
+        "timestamp": "2025-11-30 13:57:43",
+        "error": null
+    }
+]
