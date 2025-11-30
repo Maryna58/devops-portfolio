@@ -1,0 +1,14 @@
+#!/bin/bash 
+echo "Post-commit: Auto-backup"
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+if [ -f "$REPO_ROOT/backup/auto_backup.sh" ]; then
+    bash "$REPO_ROOT/backup/auto_backup.sh" > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "Backup completed successfully."
+    else
+        echo "Backup failed!"
+    fi
+else
+    echo "Backup script not found at $REPO_ROOT/backup/auto_backup.sh"
+fi
